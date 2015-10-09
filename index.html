@@ -11,14 +11,25 @@ html,body{height:100%;}
 body{margin:0px; padding:0px; background:#ffffff;}
 #toolbar{position:fixed; z-index:3; right:10px; top:10px; padding:5px; }
 #toolbar img{border:none;}
-#Statement{position:relative; z-index:3; font-size:20px; text-transform:uppercase; margin: 0 auto; text-align: center;padding-top: 10px;}
-#information {position:relative; padding: 10px 10px 10px 10px; z-index: 3; font-size:14px;  }
-#project {position:relative; color:#000000;top: 20%;  z-index:2; width:90%; height: auto; margin: 0 auto; } 
 
+/*Side section*/
 #side {position: fixed; top: 0;left: 0; z-index: 1; width: 20%; height: 100%;  }
-#verticle_scroll{position:relative; color:#000000;top: 25%; z-index:2; width:90%; height: 40%; margin: 0 auto; }
+
+/*Infromation section*/
+#Statement{position:relative; z-index:3; font-size:20px; text-transform:uppercase; margin: 0 auto; text-align: center;padding-top: 10px;}
+#information {position:relative; padding: 10px 20px 10px 20px; z-index: 3; font-size:14px;  text-align: justify; }
+#project {position:relative; color:#000000;top: 5%;  z-index:2; width:90%; height: auto; margin: 0 auto; } 
+
+/*verticle scroller*/
+
+#verticle_scroll{position:relative; color:#000000;top: 2%; z-index:2; width:90%; height: 40%; margin: 0 auto; top:5%;}
 #imagenes {position: relative; margin: 0 auto; text-align: center; height: 100%; overflow: scroll;}
 .thumb {padding: 5px;}
+
+/*Logo align*/
+#logo { position:relative; z-index:3; font-size:20px; text-transform:uppercase; margin: 0 auto; text-align: center; top: 3%}
+#logo img{ position: relative; width: 90%; margin: 0 auto;}
+
 
 #bg{position:fixed; z-index:2;  width: 80%; height: 100%; right:0; bottom: 30px; top: 0;overflow: hidden; }
 #center_img{ position: relative; overflow: hidden;  width: 95%; margin: auto; display: block; height: 90%; top: 3%;}
@@ -30,7 +41,7 @@ body{margin:0px; padding:0px; background:#ffffff;}
 #outer_container .thumbScroller .container{position:relative; left:0;}
 #outer_container .thumbScroller .content{float:left;}
 #outer_container .thumbScroller .content div{margin:0 auto; height:100%;}
-#outer_container .thumbScroller img{border:5px solid #fff;}
+#outer_container .thumbScroller img{border:5px solid #fff; width: 100%;}
 #outer_container .thumbScroller .content div a{display:block; padding:5px;}
 
 
@@ -67,6 +78,13 @@ body{margin:0px; padding:0px; background:#ffffff;}
 <body>
 <div id="bg"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola.jpg"  id="center_img" /></div>
 <div id="side">
+
+	<div id="logo">
+	<a href="index.html">
+		<img src="images/logo.png" alt="Firm"/>
+	</a>
+		
+	</div>
 	<div id="project">
 		<div id="Statement">Nosotros</div>
 		<div id="information">Descripcion de nosotros, offendit gloriatur cum te, in diam solet has. Quando dicant eam at. Te eam brute pertinax, id tempor verear theophrastus sit, eu mel nibh docendi. Vim labitur sensibus complectitur ut, ne prima pericula pri.</div>
@@ -79,11 +97,11 @@ body{margin:0px; padding:0px; background:#ffffff;}
 	<div class="thumbScroller">
 		<div class="container">
 		<div id="content">
-			<div><a href="#"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
-			<div><a href="#"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
-			<div><a href="#"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
-			<div><a href="#"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
-			<div><a href="#"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			<div><a href="Project_1.html"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			<div><a href="Project_1.html"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			<div><a href="Project_1.html"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			<div><a href="Project_1.html"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			<div><a href="Project_1.html"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
 
 		</div>
 		</div>
@@ -139,9 +157,9 @@ $(window).load(function() {
 	} else {
 		$toolbar_a.html("<img src='toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
 	}
-	ShowHideNextPrev($nextPrevBtnsInitState);
+	//ShowHideNextPrev($nextPrevBtnsInitState);
 	//thumbnail scroller
-	$thumbScroller_container.css("marginLeft",$tsMargin+"px"); //add margin
+	$thumbScroller_container.css("margin-top",$tsMargin+"px"); //add margin
 	sliderLeft=$thumbScroller_container.position().left;
 	sliderWidth=$outer_container.width();
 	$thumbScroller.css("width",sliderWidth);
@@ -199,11 +217,11 @@ $(window).load(function() {
 	});
 
 	//load 1st image
-	var the1stImg = new Image();
-	the1stImg.onload = CreateDelegate(the1stImg, theNewImg_onload);
-	the1stImg.src = $bgimg.attr("src");
-	$outer_container.data("nextImage",$(".content").first().next().find("a").attr("href"));
-	$outer_container.data("prevImage",$(".content").last().find("a").attr("href"));
+	//var the1stImg = new Image();
+	//the1stImg.onload = CreateDelegate(the1stImg, theNewImg_onload);
+	//the1stImg.src = $bgimg.attr("src");
+	//$outer_container.data("nextImage",$(".content").first().next().find("a").attr("href"));
+	//$outer_container.data("prevImage",$(".content").last().find("a").attr("href"));
 });
 
 function BackgroundLoad($this,imageWidth,imageHeight,imgSrc){
@@ -241,6 +259,7 @@ $toolbar.hover(
 );
 
 //Clicking on thumbnail changes the background image
+/*
 $("#outer_container a").click(function(event){
 	event.preventDefault();
 	var $this=$(this);
@@ -248,10 +267,10 @@ $("#outer_container a").click(function(event){
 	GetImageTitle($this);
 	SwitchImage(this);
 	ShowHideNextPrev("show");
-}); 
+}); */
 
 //next/prev images buttons
-$nextImageBtn.click(function(event){
+/*$nextImageBtn.click(function(event){
 	event.preventDefault();
 	SwitchImage($outer_container.data("nextImage"));
 	var $this=$("#outer_container a[href='"+$outer_container.data("nextImage")+"']");
@@ -265,10 +284,10 @@ $prevImageBtn.click(function(event){
 	var $this=$("#outer_container a[href='"+$outer_container.data("prevImage")+"']");
 	GetNextPrevImages($this);
 	GetImageTitle($this);
-});
+});*/
 
 //next/prev images keyboard arrows
-if($keyboardNavigation=="on"){
+/*if($keyboardNavigation=="on"){
 $(document).keydown(function(ev) {
     if(ev.keyCode == 39) { //right arrow
         SwitchImage($outer_container.data("nextImage"));
@@ -284,7 +303,7 @@ $(document).keydown(function(ev) {
         return false; // don't execute the default action (scrolling or whatever)
     }
 });
-}
+}*/
 
 function ShowHideNextPrev(state){
 	if(state=="hide"){
@@ -303,7 +322,7 @@ function GetImageTitle(elem){
 }
 
 //get next/prev images
-function GetNextPrevImages(curr){
+/*function GetNextPrevImages(curr){
 	var nextImage=curr.parents(".content").next().find("a").attr("href");
 	if(nextImage==null){ //if last image, next is first
 		var nextImage=$(".content").first().find("a").attr("href");
@@ -314,7 +333,7 @@ function GetNextPrevImages(curr){
 		var prevImage=$(".content").last().find("a").attr("href");
 	}
 	$outer_container.data("prevImage",prevImage);
-}
+}*/
 
 //switch image
 function SwitchImage(img){
