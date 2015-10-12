@@ -14,37 +14,36 @@ body{margin:0px; padding:0px; background:#ffffff;}
 #img_title{position:relative; display: none; z-index:3; padding-bottom: 10px; /*font-family:'Josefin Sans Std Light', arial, serif;*/ font-size:24px; text-transform:uppercase;}
 
 
-#bg_area {position: relative; width: 80%; height: 90%;}
-#bg{position:relative; z-index:1; overflow:hidden; width:98%; height:100%; left: 0px;}
+#bg_area {position: fixed; left: 400px; width: -moz-calc(100% - 400px); height: 90%;}
+#bg{position:relative; z-index:1; overflow:hidden; width:98%; height:100%; left: 0px; top:30px;}
 #bgimg{display:none; -ms-interpolation-mode: bicubic;}
-#preloader{position:relative; }
-#thumbnails_wrapper{z-index:2; position:absolute; bottom:30px; width:100%;  /* stupid ie needs a background value to understand hover area */}
-#outer_container{position:relative; padding:0; width:85%; margin:40px auto;}
-#outer_container .thumbScroller{position:relative; overflow:hidden;}
-#outer_container .thumbScroller, #outer_container .thumbScroller .container, #outer_container .thumbScroller .content{height:170px; margin: 0 auto;}
-#outer_container .thumbScroller .container{position:relative; left:0;}
-#outer_container .thumbScroller .content{float:left;}
-#outer_container .thumbScroller .content div{margin:0 auto; height:100%;}
-#outer_container .thumbScroller img{border:5px solid #fff;}
-#outer_container .thumbScroller .content div a{display:block; padding:5px;}
+#preloader{position:relative;}
+
 
 /*Side section*/
-#side {position: relative; bottom: 30px;left: 0; z-index: 1; width: 20%; height: -moz-calc(100% - 30px); float: left;  }
+#side {position: relative; top: 30px;left: 0; z-index: 1; width: 400px; height: -moz-calc(100% - 30px); float: left;  }
 
 /*Infromation section*/
-#Statement{position:relative; z-index:3; font-size:20px; text-transform:uppercase; margin: 0 auto; text-align: center;padding-top: 10px;}
 #information {position:relative; padding: 10px 20px 10px 20px; z-index: 3; font-size:14px;  text-align: justify; }
-#project {position:relative; color:#000000;top: 5%;  z-index:2; width:90%; height: auto; margin: 0 auto; } 
+#project {position:relative; color:#000000;top: 20px;  z-index:2; width:80%; height: auto; margin: 0 auto; } 
 
 /*verticle scroller*/
 
-#verticle_scroll{position:relative; color:#000000;top: 2%; z-index:2; width:90%; height: 40%; margin: 0 auto; top:5%;}
-#imagenes {position: relative; margin: 0 auto; text-align: center; height: 100%; overflow: scroll;}
+#verticle_scroll{position:relative; color:#000000;z-index:2; width:80%; height: 595px; margin: 0 auto; top:50px;}
+#Statement{position:relative; z-index:3; font-size:20px; text-transform:uppercase; margin: 0 auto; text-align: center;}
 .thumb {padding: 5px;}
+#thumbnails_wrapper{z-index:2; position:relative; width:100%; height: 100%; /* stupid ie needs a background value to understand hover area */}
+#outer_container{position:relative; padding:0; height:85%; margin:40px auto;}
+#outer_container .thumbScroller{position:relative; overflow:hidden;}
+#outer_container .thumbScroller, #outer_container .thumbScroller .container, #outer_container .thumbScroller .content{width:100%; margin: 0 auto;}
+#outer_container .thumbScroller .container{position:relative; left:0;}
+#outer_container .thumbScroller .content div{margin:0 auto; height:100%;}
+#outer_container .thumbScroller .content div a{display:block; padding:2px;}
+.content img{position: relative; margin: 0 20px; height: 170px;}
 
 /*Logo align*/
-#logo { position:relative; z-index:3; top: 3%}
-#logo img{ position: relative; width: 90%; margin: 0 auto;}
+#logo { position:relative; z-index:3; width: 80%; margin: 0 auto;}
+#logo img{ position: relative; width: 100%;}
 
 
 
@@ -97,49 +96,49 @@ body{margin:0px; padding:0px; background:#ffffff;}
 	<div id="verticle_scroll">
 		<div id="Statement">Proyectos</div>
 		<div id="thumbnails_wrapper">
-<div id="outer_container">
-		<div class="thumbScroller">
-	<div class="container">
-    	<div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_denebola.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
-        	
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_lux.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_lux_thumb.jpg" title="nigga" alt="Lux Aeterna" class="thumb" /></a></div>
-        </div>
-    	<div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_dk.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_dk_thumb.jpg" title="X-Wing on patrol" alt="X-Wing on patrol" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_albireo.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_albireo_thumb.jpg" title="Albireo Outpost" alt="Albireo Outpost" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_church.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_church_thumb.jpg" title="Church of Heaven" alt="Church of Heaven" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_Decampment.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_Decampment_thumb.jpg" title="Decampment" alt="Decampment" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_Hibernaculum.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_Hibernaculum_thumb.jpg" title="Hibernaculum" alt="Hibernaculum" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_lucernarium.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_lucernarium_thumb.jpg" title="Supremus Lucernarium" alt="Supremus Lucernarium" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_moons.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_moons_thumb.jpg" title="Aurea Mediocritas" alt="Aurea Mediocritas" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_praedestinatio.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_praedestinatio_thumb.jpg" title="Praedestinatio" alt="Praedestinatio" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_transitorius.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_transitorius_thumb.jpg" title="Transitorius" alt="Transitorius" class="thumb" /></a></div>
-        </div>
-        <div class="content">
-        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_victimofgravity.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_victimofgravity_thumb.jpg" title="Victim of Gravity" alt="Victim of Gravity" class="thumb" /></a></div>
-        </div>
-	</div>
-</div>
-</div>
+		<div id="outer_container">
+				<div class="thumbScroller">
+				<div class="container">
+			    	<div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_denebola.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg" title="Denebola" alt="Denebola" class="thumb" /></a></div>
+			        	
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_lux.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_lux_thumb.jpg" title="nigga" alt="Lux Aeterna" class="thumb" /></a></div>
+			        </div>
+			    	<div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_dk.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_dk_thumb.jpg" title="X-Wing on patrol" alt="X-Wing on patrol" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_albireo.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_albireo_thumb.jpg" title="Albireo Outpost" alt="Albireo Outpost" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_church.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_church_thumb.jpg" title="Church of Heaven" alt="Church of Heaven" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_Decampment.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_Decampment_thumb.jpg" title="Decampment" alt="Decampment" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_Hibernaculum.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_Hibernaculum_thumb.jpg" title="Hibernaculum" alt="Hibernaculum" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_lucernarium.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_lucernarium_thumb.jpg" title="Supremus Lucernarium" alt="Supremus Lucernarium" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_moons.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_moons_thumb.jpg" title="Aurea Mediocritas" alt="Aurea Mediocritas" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_praedestinatio.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_praedestinatio_thumb.jpg" title="Praedestinatio" alt="Praedestinatio" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_transitorius.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_transitorius_thumb.jpg" title="Transitorius" alt="Transitorius" class="thumb" /></a></div>
+			        </div>
+			        <div class="content">
+			        	<div><a href="images/Universe_and_planets_digital_art_wallpaper_victimofgravity.jpg"><img src="images/Universe_and_planets_digital_art_wallpaper_victimofgravity_thumb.jpg" title="Victim of Gravity" alt="Victim of Gravity" class="thumb" /></a></div>
+			        </div>
+				</div>
+		</div>
+		</div>
 </div>
 	</div>
 </div>
@@ -168,7 +167,7 @@ $scrollEasing=600; //scroll easing amount (0 for no easing)
 $scrollEasingType="easeOutCirc"; //scroll easing type 
 $thumbnailsContainerOpacity=0.8; //thumbnails area default opacity
 $thumbnailsContainerMouseOutOpacity=0; //thumbnails area opacity on mouse out
-$thumbnailsOpacity=0.6; //thumbnails default opacity
+$thumbnailsOpacity=1; //thumbnails default opacity
 $nextPrevBtnsInitState="show"; //next/previous image buttons initial state ("hide" or "show")
 $keyboardNavigation="on"; //enable/disable keyboard navigation ("on" or "off")
 
@@ -188,14 +187,15 @@ $nextImageBtn=$(".nextImageBtn");
 $prevImageBtn=$(".prevImageBtn");
 
 $(window).load(function() {
+	var delay=1000, setTimeoutConst;
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
 	
 	ShowHideNextPrev($nextPrevBtnsInitState);
 	//thumbnail scroller
-	$thumbScroller_container.css("marginLeft",$tsMargin+"px"); //add margin
+	$thumbScroller_container.css("marginTop",$tsMargin+"px"); //add margin
 	sliderLeft=$thumbScroller_container.position().left;
-	sliderWidth=$outer_container.width();
-	$thumbScroller.css("width",sliderWidth);
+	sliderWidth=$outer_container.height();
+	$thumbScroller.css("height",sliderWidth);
 	var totalContent=0;
 	fadeSpeed=200;
 	
@@ -204,22 +204,26 @@ $(window).load(function() {
 	
 	$thumbScroller_content.each(function () {
 		var $this=$(this);
-		totalContent+=$this.innerWidth();
-		$thumbScroller_container.css("width",totalContent);
+		totalContent+=$this.innerHeight();
+		$thumbScroller_container.css("height",totalContent);
 		$this.children().children().children(".thumb").fadeTo(fadeSpeed, $thumbnailsOpacity);
 	});
 
 	$thumbScroller.mousemove(function(e){
-		if($thumbScroller_container.width()>sliderWidth){
-	  		var mouseCoords=(e.pageX - $placement[1]);
+		if($thumbScroller_container.height()>sliderWidth){
+
+	  		var mouseCoords=(e.pageY - $placement[1]);
+	  		
 	  		var mousePercentX=mouseCoords/sliderWidth;
-	  		var destX=-((((totalContent+($tsMargin*2))-(sliderWidth))-sliderWidth)*(mousePercentX));
-	  		var thePosA=mouseCoords-destX;
-	  		var thePosB=destX-mouseCoords;
-	  		if(mouseCoords>destX){
-		  		$thumbScroller_container.stop().animate({left: -thePosA}, $scrollEasing,$scrollEasingType); //with easing
-	  		} else if(mouseCoords<destX){
-		  		$thumbScroller_container.stop().animate({left: thePosB}, $scrollEasing,$scrollEasingType); //with easing
+	  		var destY=-((((totalContent+($tsMargin))-(sliderWidth))-sliderWidth)*(mousePercentX));
+	  		var thePosA=mouseCoords-destY;
+	  		var thePosB=destY-mouseCoords;
+	  		if(mouseCoords>destY){
+		  		$thumbScroller_container.stop().animate({top: -thePosA}, $scrollEasing,$scrollEasingType); //with easing
+
+	  		} else if(mouseCoords<destY){
+	  			//alert(e.mouseCoords);
+		  		$thumbScroller_container.stop().animate({top: thePosB}, $scrollEasing,$scrollEasingType); //with easing
 	  		} else {
 				$thumbScroller_container.stop();  
 	  		}
@@ -229,13 +233,15 @@ $(window).load(function() {
 	
 
 	$thumbScroller_thumb.hover(
+
 		function(){ //mouse over
 			var $this=$(this);
-			$this.stop().fadeTo(fadeSpeed, 1);
+			$this.stop().fadeTo(fadeSpeed, .8);
 		},
 		function(){ //mouse out
 			var $this=$(this);
 			$this.stop().fadeTo(fadeSpeed, $thumbnailsOpacity);
+
 		}
 	);
 
@@ -282,14 +288,18 @@ $toolbar.hover(
 );
 
 //Clicking on thumbnail changes the background image
-$("#outer_container a").click(function(event){
-	event.preventDefault();
-	var $this=$(this);
-	GetNextPrevImages($this);
-	GetImageTitle($this);
-	SwitchImage(this);
-	ShowHideNextPrev("show");
-}); 
+$("#outer_container a").hover(function(event){
+	setTimeoutConst = setTimeout(function(){
+		event.preventDefault();
+		var $this=$(this);
+		GetNextPrevImages($this);
+		SwitchImage(this);
+		ShowHideNextPrev("show");
+	}, delay);
+    }, function(){
+         clearTimeout(setTimeoutConst );
+
+      });
 
 //next/prev images buttons
 $nextImageBtn.click(function(event){
@@ -341,6 +351,7 @@ function ShowHideNextPrev(state){
 
 //get next/prev images
 function GetNextPrevImages(curr){
+
 	var nextImage=curr.parents(".content").next().find("a").attr("href");
 	if(nextImage==null){ //if last image, next is first
 		var nextImage=$(".content").first().find("a").attr("href");
@@ -355,6 +366,7 @@ function GetNextPrevImages(curr){
 
 //switch image
 function SwitchImage(img){
+
 	$preloader.fadeIn("fast"); //show preloader
 	var theNewImg = new Image();
 	theNewImg.onload = CreateDelegate(theNewImg, theNewImg_onload);
@@ -363,13 +375,17 @@ function SwitchImage(img){
 
 //get new image dimensions
 function CreateDelegate(contextObject, delegateMethod){
+
+	
 	return function(){
+
 		return delegateMethod.apply(contextObject, arguments);
 	}
 }
 
 //new image on load
 function theNewImg_onload(){
+
 	$bgimg.data("newImageW",this.width).data("newImageH",this.height);
 	BackgroundLoad($bgimg,this.width,this.height,this.src);
 }
@@ -383,11 +399,11 @@ function FullScreenBackground(theItem,imageWidth,imageHeight){
 		var picWidth = imageWidth / imageHeight;
 		if($toolbar.data("imageViewMode")=="full"){ //fullscreen size image mode
 			if ((winHeight / winWidth) < picHeight) {
-				$(theItem).attr("width",winWidth);
-				$(theItem).attr("height",picHeight*winWidth);
+				$(theItem).attr("width",winWidth/1);
+				$(theItem).attr("height",(picHeight*winWidth)/1.2);
 			} else {
 				$(theItem).attr("height",winHeight);
-				$(theItem).attr("width",picWidth*winHeight);
+				$(theItem).attr("width",(picWidth*winHeight)/1.2);
 			};
 		} else { //normal size image mode
 			if ((winHeight / winWidth) > picHeight) {
@@ -430,7 +446,7 @@ function ImageViewMode(theMode){
 				curtop += obj.offsetTop
 			}
 		}
-		return [curtop, curleft];
+		return [curleft, curtop];
 	}
 </script>
 </body>
