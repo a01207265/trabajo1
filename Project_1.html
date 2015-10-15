@@ -67,7 +67,7 @@ body{margin:0px; padding:0px; background:#ffffff;}
 
 <div id="logo_proj">
 	<a href="index.html">
-		<img src="images/logo.png" alt="Firm"/>
+		<img src="oficial_img/logo.png" alt="Firm"/>
 	</a>
 </div>
 
@@ -81,7 +81,7 @@ body{margin:0px; padding:0px; background:#ffffff;}
 
 Ex mea inani zril delicata, sit ne repudiare efficiendi, pri eu aperiri detraxit interpretaris. Mei amet homero detracto ei. Graeco recusabo scriptorem duo cu. Vel iudico legendos disputationi an, ei error abhorreant vim. Ius semper mnesarchum te.</div>
 </div>
-<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="toolbar_fs_icon.png" width="50" height="50"  /></a></div>
+<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"></a></div>
 <div id="thumbnails_wrapper">
 <div id="outer_container">
 
@@ -166,9 +166,9 @@ $prevImageBtn=$(".prevImageBtn");
 $(window).load(function() {
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
 	if($defaultViewMode=="full"){
-		$toolbar_a.html("<img src='toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
+		$toolbar_a.html("").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
 	} else {
-		$toolbar_a.html("<img src='toolbar_fs_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
+		$toolbar_a.html("").attr("onClick", "ImageViewMode('full');return false").attr("title", "Maximize");
 	}
 	ShowHideNextPrev($nextPrevBtnsInitState);
 	//thumbnail scroller
